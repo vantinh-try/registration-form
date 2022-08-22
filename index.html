@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phiếu đăng kí tham gia chương trình khuyến mãi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="post"  action="url">
+        <h1>Phiếu đăng kí tham gia chương trình khuyến mãi</h1>
+        <!-- nội dụng của phiếu đăng kí -->
+        <table border="1" cellspacing="0" cellpadding="5">
+            <!-- Hàng 1 họ và tên  -->
+            <tr>
+                <td class="col1">Họ và tên</td>
+                <td class="col2"><input id="full-name" type="text" required></td></tr>
+            <!-- Hàng 2 địa chỉ -->
+            <tr>
+                <td class="col1">Địa chỉ</td>
+                <td class="col2"><input  id="location" type="text" required></td></tr>
+            <!-- Hàng 3 sô điện thoại  -->
+            <tr>
+                <td class="col1">Điện thoại</td>
+                <td class="col2"><input type="number" required></td></tr>
+            <!-- Hàng 4 Giới tính-->
+            <tr>
+                <td class="col1">Phái</td>
+                <td class="col2">
+                    <div class="panel-body">
+                        <label class="radio" >
+                            <input id="radio1" type="radio" name="body" value="Nam" required>
+                            <span>Nam</span>
+                        </label>
+                        <label class="radio">
+                            <input id="radio2" type="radio" name="body" value="Nữ" required>
+                            <span>Nữ</span>
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <!-- Hàng 5 nghề nghiệp -->
+            <tr>
+                <td class="col1">Nghề nghiệp</td>
+                <td class="col2">
+                    <select name="" id="" >
+                    <optgroup label="Nghề nghiệp">
+                        <option value="giaovien">Giáo viên</option>
+                        <option value="hocsinh">Sinh viên</option>
+                        <option value="không">Nhân viên văn phòng</option>
+                    </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <!-- hàng 6 Sản phẩm tham gia -->
+            <tr>
+                <td class="col1">Chọn sản phẩm tham gia</td>
+                <td class="col2">
+                    <div class="select">
+                        <ul>
+                            <li class="select-option">
+                                <input type="checkbox" name="kemdanhrang" id="c21" value="c1" required>
+                                <label for="c21">Kem đánh răng</label></li>
+                            <li class="select-option">
+                                <input type="checkbox" name="daugoidau" id="c22" value="c2" required>
+                                <label for="c22">Dầu gội đầu</label></li>
+                            <li class="select-option">
+                                <input type="checkbox" name="botgiat" id="c23" value="c3"   required>
+                                <label for="c23">Bột giặt</label></li>
+                            <li class="select-option">
+                                <input type="checkbox" name="suatam" id="c24" value="c4" required>
+                                <label for="c24">Sữa tắm</label></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        
+            <!-- hàng 7 số người dự đoán tham gia -->
+            <tr>
+                <td class="col1">Số người dự đoán tham gia</td>
+                <td class="col2">
+                    <input type="number" name="nguoidudoan" m ></td>
+            </tr>
+            <!-- hàng 8 nút bấm đồng ý đăng kí -->
+            <tr>
+                <td colspan="2" class="col1">
+                    <button class="submit"value="submit" type="submit">Đồng ý</button></td>    
+            </tr>
+            <!-- hàng 9 hiển thị khi đã đăng kí thành công -->
+            <tr>
+                <td class="end-table" colspan="2" class="col1">Bạn đã đăng kí thành công!!!</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

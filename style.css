@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form {
+    width: 700px;
+    height: auto;
+    box-shadow: 5px 5px 5px 5px #ccc;
+    margin: 80px auto;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 12px;
+    color: green;
+}
+table {
+    width:100%;
+    height: auto;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+}
+table tr {
+    background-color: rgb(177, 238, 177); 
+    border: 1px solid #000;
+}
+table .col1 {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 500;
+}
+table .col2 {
+    padding:10px;
+    font-size: 20px;
+}
+.col2 #full-name ,
+.col2 #location {
+    min-width: 300px;
+    font-size: 16px;
+}
+.select ul {
+    list-style: none;
+    position: relative;
+}
+.select-option {
+    border-radius: 6px;
+    width: 168px;
+}
+.select-option label {
+    width: 168px;
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    box-shadow: rgb(36 27 27 / 44%) -2px -2px 0px 0px;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.select-option label:active {
+    background: rgb(151, 196, 213);
+    outline: none;
+}
+.select-option input {
+    position: absolute;
+    left: -9999px;
+}
+.select-option input:checked + label {
+    background: rgb(151, 196, 213);
+    text-indent: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.09),0 -1px 2px 0 rgba(0, 0, 0, 0.09);
+}
+
+.submit {
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    padding: 0 10px;
+    box-shadow: 1px 1px 1px 1px rgba(59, 56, 56, 0.678);
+}
+.end-table {
+    padding: 10px;
+    font-size: 22px;
+    text-align: center;
+    color: rgb(219, 55, 55);
+}
